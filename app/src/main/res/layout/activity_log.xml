@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/add_card_toolbar"
+        layout="@layout/view_tool_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollViewLog"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/log_layout_btn"
+        android:layout_below="@+id/add_card_toolbar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/padding_between_view_vertical"
+            android:layout_marginLeft="@dimen/activity_margin_left"
+            android:layout_marginRight="@dimen/activity_margin_right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/log_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_between_view_vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="@dimen/padding_between_view_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/log_response_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/log_status_icon"
+                    android:layout_marginLeft="@dimen/activity_margin_left"
+                    android:layout_marginRight="@dimen/activity_margin_left" />
+
+                <TextView
+                    android:id="@+id/log_response"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/log_layout_btn"
+                    android:layout_below="@+id/log_response_status"
+                    android:layout_marginLeft="@dimen/activity_margin_left"
+                    android:layout_marginRight="@dimen/activity_margin_left" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/log_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/log_btn_send_log"
+            style="@style/button.primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".5"
+            android:onClick="onEmailLogClicked"
+            android:paddingRight="10dp"
+            android:text="@string/btn_send_log" />
+
+        <Button
+            android:id="@+id/log_btn_next"
+            style="@style/button.primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight=".5"
+            android:onClick="onNextClicked"
+            android:paddingLeft="10dp"
+            android:text="@string/btn_next" />
+    </LinearLayout>
+
+</RelativeLayout>

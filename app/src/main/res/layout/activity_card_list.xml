@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/card_list_toolbar"
+        layout="@layout/view_tool_bar" />
+
+    <include
+        android:id="@+id/card_list_empty_LAY"
+        layout="@layout/fragment_empty_wallet" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_list_toolbar"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

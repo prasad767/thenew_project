@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/fragmentCardList">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:src="@drawable/testcard"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="3dp"
+        android:text="@string/fdnb_card"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewCardType"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="2dp"
+        android:text="@string/card_details"/>
+
+</RelativeLayout>

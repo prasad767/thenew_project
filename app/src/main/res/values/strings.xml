@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">VTS Cert App</string>
+    <string name="app_title">VTS Certification App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Dashboard-->
+    <string name="txt_no_cards">No Cards</string>
+    <string name="txt_no_card_info">There is No card in the Wallet.\nInfo is not available</string>
+
+    <!--Add Card -->
+    <string name="title_Add_Card">Add New Card</string>
+    <string name="btn_enroll_device">Enroll</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_expiry">MM/YY</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="hint_address_line1">Address Line 1</string>
+    <string name="hint_address_line2">Adress Line 2</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_zip">Zip</string>
+
+    <string name="txt_billing_address">Billing Address</string>
+
+
+
+    <!-- Settings-->
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_terms_and_condition">Terms</string>
+    <string name="dialog_title">Add new card</string>
+    <string name="select_environment">Select Environment</string>
+
+    <!-- Terms and Conditions-->
+    <string name="dialogtc">Terms and Conditions</string>
+    <string name="dialogtcdetail">Terms and conditions for adding card in wallet</string>
+
+    <string name="dialog_text">\
+       Aliquam id lorem ullamcorper, pretium quam
+       non, rutrum risus. Integer imperdiet fringilla
+       leo in sagittis. Pellentesque interdum, urna a
+       suscipit pellentesque, odio turpis tristique
+       nulla, consequat lobortis sem massa in elit.
+       Proin ipsum diam, iaculis non pulvinar eu,
+       volutpat a metus.
+     <!--  Nunc velit mi, cursus sit amet tempus quis,
+       ultricies scelerisque augue. Nullam semper
+       urna lorem, eget rhoncus metus sodales id.
+       Sed tristique ligula condimentum magna
+       finibus, et convallis nibh varius. Donec ante
+       dolor, ullamcorper at malesuada eget,
+       vehicula id felis.-->
+    </string>
+    <string name="btn_provisioning">Provision</string>
+    <string name="btn_accept">Accept</string>
+
+
+    <!-- ConfirmAddCardActivity-->
+    <string name="title_activity_confirm_add_card">Confirm Provisioning</string>
+    <string name="confirmViewHeader">This card will been added to your wallet</string>
+    <string name="fdnb_card">FDNB Visa Card</string>
+    <string name="card_details">Visa ...4243, Exp. 10/15</string>
+    <string name="done">Done</string>
+    <string name="add_other_card">Add another card</string>
+    <!-- FragmentCardList-->
+    <string name="tap_to_pay">Tap to pay</string>
+    <string name="good_morning">Good morning, Jaesung</string>
+    <string name="hold_phone">Hold your phone over</string>
+
+    <string name="on_terminal">on the terminal</string>
+    <string name="title_activity_card_list">Card List</string>
+    <string name="title_activity_payment_complete">Wallet</string>
+    <string name="payment_compelte">Payment Completed</string>
+    <string name="err_msg_first_name">Enter your first name</string>
+    <string name="err_msg_last_name">Enter valid last name</string>
+    <string name="err_msg_city">Enter city</string>
+    <string name="err_msg_country">Enter Country</string>
+    <string name="err_msg_address1">Enter Address1</string>
+    <string name="err_msg_address2">Enter Address2</string>
+    <string name="err_msg_state">Enter State</string>
+
+    <!-- FragmentCardListWithAction-->
+    <string name="action_none">No Action</string>
+    <string name="action_suspend">Suspend</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_replenish">Replenish</string>
+    <string name="btn_card_action">Apply on Card</string>
+    <string name="send_email">Send Logs</string>
+    <string name="action_email">Sending Email</string>
+
+
+    <!-- Log Activity -->
+    <string name="btn_next">Next</string>
+    <string name="btn_send_log">Email Log</string>
+    <string name="title_activity_log_activity">Response Log</string>
+    <string name="response_status_code">Response status code : </string>
+    <string name="response_body">Response body : </string>
+
+    <string name="txt_alert_discontinue_flow">Do you want to discontinue the flow?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_confirm_provisioning">Confirm Provisioning</string>
+    <string name="btn_ok">OK</string>
+
+    <!-- provisioning in progress message -->
+    <string name="backbtn_press_prompt">Provisioning in progress,You can not discontinue at this moment!</string>
+    <string name="title_activity_card_details">Card Details</string>
+    <string name="title_transaction_list">Transactions : </string>
+    <string name="title_activity_environment">Select Environment</string>
+    <string name="spinner_title">Select Environment</string>
+
+
+    <string name="Enroll_device">Enroll Device</string>
+
+
+    <string-array name="vts_environments">
+        <item>SANDBOX</item>
+        <item>OCC_SANDBOX</item>
+        <item>DEV1</item>
+
+    </string-array>
+</resources>

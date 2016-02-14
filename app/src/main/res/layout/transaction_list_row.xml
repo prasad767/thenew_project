@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/transaction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_list_transactions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/transaction_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/transaction_name"
+        android:layout_below="@+id/transaction_name"
+        android:textSize="@dimen/transaction_detail"
+        android:textColor="@color/list_description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <TextView
+        android:id="@+id/transaction_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/transaction_detail"
+        android:textColor="@color/list_description"
+        android:layout_alignTop="@+id/transaction_name"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/transaction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/transaction_detail"
+        android:textColor="@color/list_description"
+        android:layout_alignTop="@+id/transaction_place"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/fragmentCardList">
+
+    <TextView
+        style="@style/text.medium"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/good_morning"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/tapView"
+        android:layout_below="@+id/textView"
+        android:paddingTop="@dimen/padding_between_view_vertical"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/tapToPayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imgtaptopay"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tapTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tap_to_pay"
+            android:layout_marginLeft="@dimen/padding_between_view_horizontal"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tapView"
+        android:paddingTop="10dp"
+        android:src="@drawable/testcard"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="3dp"
+        android:text="@string/fdnb_card"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewCardType"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="2dp"
+        android:text="@string/card_details"/>
+
+    <ImageView
+        android:id="@+id/imageViewDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/textViewCardDetails"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewHold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewDots"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="2dp"
+        android:text="@string/hold_phone"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/holdPhoneView"
+        android:layout_below="@id/textViewHold"
+        android:paddingTop="1dp"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/payConfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imgpayconf"
+            android:clickable="true"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tapTxtView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_terminal"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/card_detail_toolbar"
+        layout="@layout/view_tool_bar" />
+
+    <TextView
+        android:id="@+id/card_details_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_marginRight="@dimen/activity_margin_left"
+        android:layout_below="@+id/card_detail_toolbar"/>
+    <TextView
+        android:id="@+id/title_transaction_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_details_info"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_transaction_list"
+        />
+    <View
+        android:id ="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_marginRight="@dimen/activity_margin_left"
+        android:layout_below="@+id/title_transaction_list"
+        android:background="?android:attr/listDivider"/>
+    <RelativeLayout
+        android:id="@+id/transaction_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_marginRight="@dimen/activity_margin_left"
+        android:layout_below="@id/divider">
+
+        <ListView
+            android:id="@+id/listview_transaction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text.medium"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:text="Select environment"
+            android:id="@+id/select_env_text"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <Spinner android:id="@+id/env_spinner"
+        android:layout_marginTop="@dimen/padding_between_view_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:prompt="@string/spinner_title"/>
+
+    <Button
+        android:id="@+id/selectEnv"
+        style="@style/button.primary"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:text="@string/Enroll_device"/>
+   
+
+</LinearLayout>

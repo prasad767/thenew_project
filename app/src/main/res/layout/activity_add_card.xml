@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/view_tool_bar"
+        android:id="@+id/add_card_toolbar"/>
+
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/add_card_toolbar">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_marginRight="@dimen/activity_margin_right"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical"
+            android:background="@drawable/testcard" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_first_name"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:hint="@string/hint_first_name"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:layout_marginRight="@dimen/padding_between_view_horizontal" />
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_last_name"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_last_name"
+                android:maxLength="30"
+                android:layout_marginLeft="@dimen/padding_between_view_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_card_number"
+                android:layout_width="0dp"
+                android:layout_weight=".9"
+                android:layout_height="40dp"
+                android:hint="@string/hint_card_number"
+                android:digits="01234 56789"
+                android:inputType="number"
+                android:maxLength="19"
+                android:paddingLeft="5dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera_24dp"
+                android:onClick="onCameraClicked">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_expiry"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:hint="@string/hint_expiry"
+                android:layout_marginRight="@dimen/padding_between_view_horizontal" />
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_cvv"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:maxLength="3"
+                android:hint="@string/hint_cvv"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/padding_between_view_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <TextView
+                style="@style/text.medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_billing_address"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_address_line_1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_address_line1"
+                android:inputType="textPostalAddress"
+                android:maxLength="50"
+                android:layout_marginTop="@dimen/padding_between_view_vertical"
+                />
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_address_line_2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_address_line2"
+                android:inputType="textPostalAddress"
+                android:layout_marginTop="@dimen/padding_between_view_vertical"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <EditText
+                android:id="@+id/add_card_view_city"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:maxLength="30"
+                android:inputType="text"
+                android:hint="@string/hint_city" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_between_view_vertical">
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_state"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:maxLength="30"
+                android:hint="@string/hint_state"
+                android:inputType="text"
+                android:layout_marginRight="@dimen/padding_between_view_horizontal" />
+
+            <EditText
+                style="@style/edittext"
+                android:id="@+id/add_card_view_zip"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="40dp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:hint="@string/hint_zip"
+                android:layout_marginLeft="@dimen/padding_between_view_horizontal" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_card_view_btn_add_card"
+            style="@style/button.primary"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btn_enroll_device"
+            android:layout_marginTop="@dimen/padding_between_view_vertical"
+            android:layout_marginBottom="@dimen/padding_between_view_vertical"
+            android:onClick="onEnrollClicked"/>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/fragmentCardList"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        style="@style/text.medium"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/good_morning"
+        android:paddingTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/textView"
+        android:paddingTop="20dp"
+        android:src="@drawable/testcard"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="5dp"
+        android:text="@string/fdnb_card"/>
+
+    <TextView
+        style="@style/text.small"
+        android:id="@+id/textViewCardDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewCardType"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="5dp"
+        android:text="@string/card_details"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCardDetails"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@+id/noneRadioBtn"
+        android:id="@+id/cardActionRadioGrp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noneRadioBtn"
+            android:text="@string/action_none"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suspendRadioBtn"
+            android:text="@string/action_suspend"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resumeRadioBtn"
+            android:text="@string/action_resume"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteRadioBtn"
+            android:text="@string/action_delete"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/replenishRadioBtn"
+            android:text="@string/action_replenish"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cardAction"
+        style="@style/button.primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_card_action"
+        android:layout_below="@+id/cardActionRadioGrp"
+        android:layout_marginTop="@dimen/padding_between_view_vertical"
+        />
+
+
+</RelativeLayout>
+

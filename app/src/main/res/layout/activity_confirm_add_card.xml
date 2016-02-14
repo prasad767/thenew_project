@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.visa.vts.certificationapp.activity.ConfirmAddCardActivity">
+
+
+    <include layout="@layout/view_tool_bar"
+        android:id="@+id/confirm_provisioning_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin_right"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_below="@+id/confirm_provisioning_toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text.medium"
+            android:id="@+id/txtViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="25dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="25dp"
+            android:text="@string/confirmViewHeader"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtViewHeader"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/testcard"/>
+
+        <TextView
+            style="@style/text.small"
+            android:id="@+id/textViewCardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fdnb_card"/>
+
+        <TextView
+            style="@style/text.small"
+            android:id="@+id/textViewCardDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/textViewCardType"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="2dp"/>
+
+
+        <Button
+            android:id="@+id/btn_confirm_provisioning"
+            style="@style/button.primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCardDetails"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn_confirm_provisioning"/>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
